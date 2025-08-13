@@ -1,5 +1,31 @@
 {
-  "dependencies": {
-    "mysql2": "^3.14.2"
-  }
+	"name": "fivem-bans",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"build": "ts-node ./build.ts",
+		"watch": "esbuild --watch --bundle --minify --platform=browser --target=es2020 --outdir=build ./client/*.ts ./server/*.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@citizenfx/client": "^2.0.6947-1",
+		"@citizenfx/server": "^2.0.6947-1",
+		"@types/node": "^20.8.9",
+		"axios": "^1.9.0",
+		"esbuild": "^0.19.5",
+		"fs": "^0.0.1-security",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.2.2",
+		"undici": "^7.10.0"
+	},
+	"dependencies": {
+		"@types/ini": "^4.1.1",
+		"https": "^1.0.0",
+		"ini": "^5.0.0",
+		"mysql2": "^3.14.3",
+		"ssh2": "^1.16.0",
+		"ts3-nodejs-library": "^3.5.1"
+	}
 }
